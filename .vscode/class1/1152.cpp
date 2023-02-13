@@ -8,7 +8,7 @@ vector<string> split(string input, string delimiter);
 int main()
 {
     string str;
-
+    
     //문자열 입력 받기
     getline(cin, str);
     
