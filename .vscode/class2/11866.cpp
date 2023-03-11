@@ -3,6 +3,13 @@
 
 using namespace std;
 
+/*
+정석 풀이법
+-> 자료구조 큐를 사용하는것
+https://cocoon1787.tistory.com/234
+*/
+
+
 int main()
 {
 	ios_base::sync_with_stdio(false);
