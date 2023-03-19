@@ -2,6 +2,8 @@
 
 using namespace std;
 
+//그리디 알고리즘 풀이법
+
 int main()
 {
 	ios_base::sync_with_stdio(false);
