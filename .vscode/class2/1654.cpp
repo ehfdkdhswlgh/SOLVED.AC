@@ -4,7 +4,7 @@
 
 using namespace std;
 
-//매개변수 탐색 : https://m42-orion.tistory.com/70 
+//매개변수 탐색 알고리즘 : https://m42-orion.tistory.com/70 
 
 int main()
 {
