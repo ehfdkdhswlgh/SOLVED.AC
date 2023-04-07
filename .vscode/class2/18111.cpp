@@ -27,7 +27,7 @@ int main()
         }
     }
 
-    int times[257];
+    int times[257]; //index = 높이, 값 = 소모시간
     fill_n(times, 257, INT_MAX);
 
 
