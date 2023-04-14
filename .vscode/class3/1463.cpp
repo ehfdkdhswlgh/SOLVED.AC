@@ -25,9 +25,10 @@ int main() {
 
 
     for (int i=2; i<=n; i++) {
-        dp[i] = d[i-1]+1;
+        dp[i] = d[i-1]+1; //bottom up 방식이기때문에 가능함
         if (i%2 == 0) dp[i] = min(dp[i], dp[i/2]+1);
         if (i%3 == 0) dp[i] = min(dp[i], dp[i/3]+1); 
+        //총 3개를 비교해서 가장 작은 값 리턴 (-1, /2 , /3)
     }
     cout << dp[n];
 
