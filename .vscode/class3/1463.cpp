@@ -10,6 +10,34 @@ using namespace std;
 // 반복문으로 구현 -> Bottom Up 방식 (배열의 처음부터 저장해나감)
 
 
+
+
+
+
+/*
+반복문으로 구현 (속도상승, bottom up)
+int main() {
+    ios::sync_with_stdio(0);
+    cin.tie(0);
+
+    cin >> n;
+    dp[1] = 0;
+
+
+    for (int i=2; i<=n; i++) {
+        dp[i] = d[i-1]+1;
+        if (i%2 == 0) dp[i] = min(dp[i], dp[i/2]+1);
+        if (i%3 == 0) dp[i] = min(dp[i], dp[i/3]+1); 
+    }
+    cout << dp[n];
+
+    return 0;
+}
+*/
+
+
+
+
 int dp[1000001] = {};
 
 int lowestFunction(int n)
