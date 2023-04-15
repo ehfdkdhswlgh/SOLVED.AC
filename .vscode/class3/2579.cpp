@@ -30,6 +30,9 @@ int main()
     for(int i = 4; i <= n; i++)
     {
         dp[i] = max(dp[i - 3] + stairs[i - 1], dp[i - 2]) + stairs[i];
+        //(i-3번째 최대값 + i-1번째 값 + i번째 값) 이랑
+        //(i-2번째 최대값) + i번째 값 
+        //중에서 큰 값을 선택
     }
 
     cout << dp[n];
