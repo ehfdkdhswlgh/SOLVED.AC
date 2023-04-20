@@ -6,7 +6,7 @@ using namespace std;
 
 
 
-// 재귀 구현
+// 재귀 구현 (권장)
 vector<int> graph[9];
 bool visited[9] = {false, }; 
 
