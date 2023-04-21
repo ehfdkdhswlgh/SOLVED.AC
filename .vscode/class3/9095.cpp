@@ -19,7 +19,8 @@ int sumCount(int n)
     }
     else
     {
-        return sumCount(n - 1) + sumCount(n - 2) + sumCount(n - 3);
+        return sumCount(n - 1) + sumCount(n - 2) + sumCount(n - 3); 
+        //1을 반드시 포함한 n을 만드는 경우의 수 + 2를 반드시 포함한 n을 만드는 경우의 수 + 3을 반드시 포함한 n을 만드는 경우의 수
     }
 }
 
