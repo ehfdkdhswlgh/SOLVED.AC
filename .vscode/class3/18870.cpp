@@ -30,6 +30,8 @@ int main()
     {
 
         //lower_bound 시간복잡도 = O(logn) (정렬되어있을때만 가능)
+        //sort 시간복잡도 = O(nlogn)
+        //총 시간복잡도 O(nlogn) + O(logn)  <---- O(n)보다는 좋음
         cout << lower_bound(pressed.begin(), pressed.end(), v[i]) - pressed.begin() << " ";
         
         //find 시간복잡도 = O(n) -> 시간  초과!!
