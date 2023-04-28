@@ -29,12 +29,12 @@ int main()
     for(int i = 0; i < v.size(); i++)
     {
 
-        //lower_bound 시간복잡도 = O(logn) (정렬되어있을때만 가능)
-        //sort 시간복잡도 = O(nlogn)
+        //lower_bound 시간복잡도 = O(logn) (정렬되어있을때만 가능) (이진탐색)
+        //sort 시간복잡도 = O(nlogn) (개선된 퀵정렬)
         //총 시간복잡도 O(nlogn) + O(logn)  <---- O(n)보다는 좋음
         cout << lower_bound(pressed.begin(), pressed.end(), v[i]) - pressed.begin() << " ";
         
-        //find 시간복잡도 = O(n) -> 시간  초과!!
+        //find 시간복잡도 = O(n) -> 시간  초과!! (순차탐색)
         //cout << find(pressed.begin(), pressed.end(), v[i]) - pressed.begin() << "";
     }
     
