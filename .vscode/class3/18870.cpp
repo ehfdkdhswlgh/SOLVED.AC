@@ -29,7 +29,7 @@ int main()
     for(int i = 0; i < v.size(); i++)
     {
 
-        //lower_bound 시간복잡도 = O(logn)
+        //lower_bound 시간복잡도 = O(logn) (정렬되어있을때만 가능)
         cout << lower_bound(pressed.begin(), pressed.end(), v[i]) - pressed.begin() << " ";
         
         //find 시간복잡도 = O(n) -> 시간  초과!!
