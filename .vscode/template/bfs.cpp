@@ -19,7 +19,8 @@ void bfs(int start)
     {
         int x = q.front();
         q.pop();
-        cout << x << " ";
+        cout << x << " "; // 큐에서 빠져나올 때 방문
+        
         // 해당 원소와 연결된 , 아직 방문하지 않은 원소들을 큐에 삽입
         for (int i = 0; i < graph[x].size(); i++)
         {
