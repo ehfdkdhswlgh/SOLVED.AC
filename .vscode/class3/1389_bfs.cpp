@@ -13,7 +13,7 @@ int bacon_sum = 101;
 void bfs(int st)
 {
     queue<int> q;
-    visited[st] = 1;
+    visited[st] = 0;
     q.push(st);
     
     while(!q.empty())
