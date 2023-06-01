@@ -7,6 +7,16 @@ using namespace std;
 bool visited[9] = {false, };
 vector<int> graph[9];
 
+
+
+
+
+// 최단 거리를 구하고 싶다면?
+// 저장할 큐에 cost 정보도 넣고, 새로운값을 큐에서 넣을 때마다 이전 값의 cost + 1 해서 넣는다
+// 목적지에 도착했을 때 해당 값의 cost가 최단 거리
+
+
+
 void bfs(int start)
 {
     queue<int> q;
