@@ -41,9 +41,6 @@ int bfs()
             visited[current.first + 1] = true;
         }
 
-
-
-
     }
 
     return -1;
